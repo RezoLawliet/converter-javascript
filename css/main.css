@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, li {
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    color: #181818;
+    background-color: #F4F4F4;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.converter-header {
+    text-align: center;
+    font-size: 83px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.converter-container {
+    padding: 15px 0;
+    border-radius: 4px;
+    border: 1px solid rgba(50, 50, 55, .35);
+}
+.converter-row {
+    width: 700px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.converter-column {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.convert-icon {
+    height: 30px;
+}
+.convert-switcher {
+    width: 300px;
+    height: 45px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(50, 50, 55, .35);
+    color: #505055;
+    background-color: #F4F4F4;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.convert-container {
+    width: 300px;
+    height: 45px;
+    padding: 6px 12px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(50, 50, 55, .35);
+    color: #505055;
+    background-color: #F4F4F4;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.convert-container:focus, .convert-shifter:focus {
+    border: 1px solid #007bff;
+}
+.convert-switcher:disabled {
+    background-color: #E8E8E8;
+}
+.convert-table {
+    gap: 10px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+}
+.table-course {
+    padding: 20px;
+    flex: 1 1 auto;
+    border-radius: 4px;
+    border: 1px solid rgba(50, 50, 55, .25);
+}
+.table-course-header {
+    margin-bottom: 4px;
+    font-size: 23px;
+    font-weight: 500;
+}
+.table-course-value {
+    font-size: 20px;
+    font-weight: 300;
+}
+.table-course-value.growth {
+    color: #28a745;
+}
+.table-course-value.fall {
+    color: #dc3545;
+}
