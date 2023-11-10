@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConverterJS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h1 class="converter-header">ConverterJS</h1>
+            <div class="converter-container">
+                <form action="#">
+                    <div class="converter-row">
+                        <div class="converter-column">
+                            <select class="convert-switcher" id="inset-switcher" disabled>
+                                <option value="RUR">RUR - Russian Rubles</option>
+                            </select>
+                            <input class="convert-container" id="inset" type="number" placeholder="0,00" autofocus>
+                        </div>
+                        <img class="convert-icon" src="https://www.svgrepo.com/show/471955/switch-horizontal-01.svg" alt="">
+                        <div class="converter-column">
+                            <select class="convert-switcher" id="convert-switcher">
+                                <option value="USD">USD — United States Dollar</option>
+                                <option value="EUR">EUR — Euro</option>
+                                <option value="GBP">GBP — Great Britain Pound</option>
+                                <option value="TRY">TRY — Turkish Lira</option>
+                                <option value="CNY">CNY — Chineese Yuan</option>
+                            </select>
+                            <input class="convert-container" id="convert" type="number" placeholder="0,00">
+                        </div>
+                    </div>
+                    <div class="convert-table">
+                        <div class="table-course">
+                            <h3 class="table-course-header">USD</h3>
+                            <div class="table-course-value" data-value="USD">--.--</div>
+                        </div>
+                        <div class="table-course">
+                            <h3 class="table-course-header">EUR</h3>
+                            <div class="table-course-value" data-value="EUR">--.--</div>
+                        </div>
+                        <div class="table-course">
+                            <h3 class="table-course-header">GBP</h3>
+                            <div class="table-course-value" data-value="GBP">--.--</div>
+                        </div>
+                        <div class="table-course">
+                            <h3 class="table-course-header">TRY</h3>
+                            <div class="table-course-value" data-value="TRY">--.--</div>
+                        </div>
+                        <div class="table-course">
+                            <h3 class="table-course-header">CNY</h3>
+                            <div class="table-course-value" data-value="CNY">--.--</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
